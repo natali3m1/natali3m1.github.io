@@ -32,6 +32,34 @@ if (!config || !container) {
 
         container.appendChild(image);
     }
+    if (project.id === "jewelry-soldering") {
+    const gallery = document.createElement("div");
+    gallery.style.display = "flex";
+    gallery.style.flexWrap = "wrap";
+    gallery.style.gap = "16px";
+    gallery.style.margin = "20px 0";
+
+    const imageFiles = [
+        "IMG_5716.jpeg",
+        "IMG_5719.jpeg",
+        "IMG_5715.jpeg"
+    ];
+
+    imageFiles.forEach(filename => {
+        const image = document.createElement("img");
+        image.src = `images/${filename}`;
+        image.alt = "Jewelry soldering project";
+        image.style.width = "100%";
+        image.style.maxWidth = "300px";
+        image.style.height = "auto";
+        image.style.objectFit = "cover";
+        image.style.borderRadius = "12px";
+
+        gallery.appendChild(image);
+    });
+
+    container.appendChild(gallery);
+}
     const description = document.createElement("p");
     description.textContent = project.description;
     if (project.pdf) {
