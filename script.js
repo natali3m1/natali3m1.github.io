@@ -68,20 +68,6 @@ const projects = [
         description: "A fun, hands-on project exploring soldering techniques and getting comfortable with soldering processes",
         github: ""
     },
-    {
-        id: "74-series-ics",
-        title: "74-Series ICs",
-        language: "EE",
-        description: "Digital logic projects in the lab using 74-series ICs, continuously updated",
-        github: ""
-    },
-    {
-        id: "fpgas",
-        title: "FPGAs",
-        language: "EE",
-        description: "Digital logic projects in the lab using FPGAs and SystemVerilog, continuously updated",
-        github: ""
-    }
 ];
 
 window.PORTFOLIO_CONFIG = {
