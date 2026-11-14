@@ -34,6 +34,14 @@ if (!config || !container) {
     }
     const description = document.createElement("p");
     description.textContent = project.description;
+    if (project.pdf) {
+    const pdfLink = document.createElement("a");
+    pdfLink.href = project.pdf;
+    pdfLink.textContent = "View Betz-Limit Derivation (PDF) →";
+    pdfLink.target = "_blank";
+    pdfLink.rel = "noopener noreferrer";
+    container.appendChild(pdfLink);
+}
 
     const codeHeading = document.createElement("h2");
     codeHeading.textContent = "Source Code";
