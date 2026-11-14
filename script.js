@@ -28,7 +28,7 @@ const projects = [
     },
     {
         id: "lab5",
-        title: "ALU and Seven-Segment Display (Lab 5)",
+        title: "FPGA Work with ALUs",
         language: "Verilog",
         description: "Designed a 4-bit arithmetic logic unit supporting AND, OR, addition, and subtraction. Integrated the ALU with a seven-segment display decoder to display hexadecimal results on an FPGA.",
         files: [
@@ -41,7 +41,7 @@ const projects = [
     },
     {
         id: "lab6",
-        title: "6-Bit Binary-to-Decimal Converter (Lab 6)",
+        title: "FPGA Work with Displays",
         language: "Verilog",
         description: "Designed an FPGA-based binary-to-decimal converter using a 6-bit DIP switch input. Converted binary values from 0 to 63 into decimal and displayed them on a multiplexed two-digit seven-segment display.",
         files: [
