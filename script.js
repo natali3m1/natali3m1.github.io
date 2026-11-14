@@ -27,10 +27,30 @@ const projects = [
         github: "https://github.com/natali3m1/coding-portfolio-code"
     },
     {
-        id: "logic-design",
-        title: "Logic Gates, Adders, Muxes, ALUs",
+        id: "lab5",
+        title: "ALU and Seven-Segment Display (Lab 5)",
         language: "Verilog",
-        description: "Projects using SystemVerilog, VSCode, and Icarus Verilog",
+        description: "Designed a 4-bit arithmetic logic unit supporting AND, OR, addition, and subtraction. Integrated the ALU with a seven-segment display decoder to display hexadecimal results on an FPGA.",
+        files: [
+            { name: "top.sv", path: "lab5/top.sv" },
+            { name: "alu5.sv", path: "lab5/alu5.sv" },
+            { name: "sevseg.sv", path: "lab5/sevseg.sv" },
+            { name: "top.pcf", path: "lab5/top.pcf" }
+        ],
+        github: ""
+    },
+    {
+        id: "lab6",
+        title: "6-Bit Binary-to-Decimal Converter (Lab 6)",
+        language: "Verilog",
+        description: "Designed an FPGA-based binary-to-decimal converter using a 6-bit DIP switch input. Converted binary values from 0 to 63 into decimal and displayed them on a multiplexed two-digit seven-segment display.",
+        files: [
+            { name: "top.sv", path: "lab6/top.sv" },
+            { name: "dddd.sv", path: "lab6/dddd.sv" },
+            { name: "sevseg.sv", path: "lab6/sevseg.sv" },
+            { name: "counter.sv", path: "lab6/counter.sv" },
+            { name: "top.pcf", path: "lab6/top.pcf" }
+        ],
         github: ""
     },
     {
@@ -93,7 +113,7 @@ if (grid && filters) {
             tag.textContent = project.language;
 
             const title = document.createElement("h3");
-            title.textContent = `${project.title}`;
+            title.textContent = project.title;
 
             const description = document.createElement("p");
             description.className = "project-description";
