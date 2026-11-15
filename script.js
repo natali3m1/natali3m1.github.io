@@ -58,7 +58,7 @@ const projects = [
         title: "Betz-Limit Derivation",
         language: "Math",
         description: "A mathematical derivation using first principles of Newtonian mechanics, conservation of energy, and calculus, as well as rudimentary control volume analysis.",
-        pdf: "betz-limit.pdf",
+        pdf: "Betz__Limit.pdf",
         github: ""
     },
     {
